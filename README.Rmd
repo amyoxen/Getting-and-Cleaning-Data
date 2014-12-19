@@ -1,0 +1,47 @@
+---
+title: "README"
+author: "Ron He"
+date: "Thursday, December 18, 2014"
+output: html_document
+---
+
+###Raw Data of this project
+One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Here are the data for the project:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+You should create one R script called run_analysis.R that does the following.
+
+Merges the training and the test sets to create one data set.
+Extracts only the measurements on the mean and standard deviation for each measurement.
+Uses descriptive activity names to name the activities in the data set.
+Appropriately labels the data set with descriptive activity names.
+Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+###Definition and Tools
+
+This is a Getting and Cleaning Data Course homework assignement. The goal is to convert a raw data set into a tidy dataset. The following is the definition of tidy data:
+
+1. Each variable forms a column.
+2. Each observation forms a row.
+3. Each type of observational unit forms a table.
+
+Data manipulation includes variable-by-variable transformation, as well as
+aggregation, filtering and reordering, which are defined as:
+
+- Filter: subsetting or removing observations based on some condition.
+- Transform: adding or modifying variables. These modifications can involve either a
+single variable (e.g., log-transformation), or multiple variables (e.g., computing density
+from weight and volume).
+- Aggregate: collapsing multiple values into a single value (e.g., by summing or taking
+means).
+- Sort: changing the order of observations.
+
+###Steps to produce the final data table
+
+1. make sure the "run_analysis.R" and the "UCI HAR Dataset" are in the same folder.
+2. run the R code and it will generate the "finalTable.txt".
